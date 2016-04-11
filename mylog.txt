@@ -1,0 +1,6 @@
+a new car requested:3 Hour Walk: 15 + Basic Tour: 0; English; 
+########################
++++ TourObserver: The tour of Kellie Hughes has been updated. cost 15.0
+########################
+a new car requested:3 Hour Walk: 15 + Basic Tour: 0; ; 
+a new car requested:Basic Tour: 0; Kellie; 

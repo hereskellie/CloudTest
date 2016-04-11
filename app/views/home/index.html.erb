@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/application.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Tour Guide Application</title>
+    <style>
+
+
+</style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Tour Guide Application</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="users/sign_in">SignIn/Sign up</a></li>
+        <li><a href="reviews">Reviews</a></li>
+        <li><a href="tours">List of Booked Tours</a></li>
+        <li><a href="tours/new">Book a Tour</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+
+<body style="background-color:darkgrey;"><center>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <h1>Dublin Tour Guide</h1>
+    
+
+    <%= yield %>
+    
+    <!-- Plans -->
+    <section id="plans">
+        <div class="container">
+            <div class="row">
+
+                <!-- day tour -->
+                <div class="col-md-4 text-center">
+                    <div class="panel panel-danger panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Day Tour</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>Starting From €20</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i>Walking Tour of Dublin</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Starts at 11am</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>The GPO</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>St. Patricks Cathedral</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Stephens Green</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-block btn-danger" href="tours/new">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /day tour -->
+
+                <!-- haunted tour -->
+                <div class="col-md-4 text-center">
+                    <div class="panel panel-info panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Haunted Tour</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>Starting From €25</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i>Haunted Bus Tour</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Starts at 8pm</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>The Gravediggers Pub</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Kilmainham Jail</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Bully Acre</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-block btn-info" href="tours/new">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /haunted tour -->
+
+                <!-- pub crawl -->
+                <div class="col-md-4 text-center">
+                    <div class="panel panel-success panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Pub Crawl</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>Starting from €10</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i>Pub Crawl in Dublin City</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Starts at 7pm</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Trinity Bar</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>The Temple Bar Bar</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i>Many, Many more</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-block btn-success" href="tours/new">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /pub crawl -->
+
+            </div>
+        </div>
+    </section>
+    <!-- /Plans -->
+</center>
+
+
+</body>
+
+</html>

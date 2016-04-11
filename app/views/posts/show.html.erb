@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Post in <% @review.review_title %></h1>
+<p>
+  <%= @post.post_message %>
+</p>
+
+<%= link_to 'Edit', edit_review_post_path(@review, @post) %> |
+<%= link_to 'Back', review_posts_path %>

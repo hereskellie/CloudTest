@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Review title:</strong>
+  <%= @review.review_title %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>
+
+<!-- Display the posts of a review -->
+<h2>Posts</h2>
+<% @review.posts.each do |p| %>
+<p>
+<b>Message:</b>
+<% p.post_message %>
+</p>
+<% end %>
+
+<%= link_to 'Show posts', review_posts_path(@review) %>
